@@ -79,7 +79,7 @@ if not data_commune.empty:
                                      line_shape='spline')
 
                 # Ajout des informations de survol personnalisées
-                fig_maison.update_traces(hovertemplate='<b>%{x}</b>, %{y:,.0f}€/m²')
+                fig_maison.update_traces(hovertemplate='<b>%{x}</b>: %{y:,.0f}€/m²')
 
                 # Mettre à jour les ticks de l'axe des années pour afficher des années pleines
                 fig_maison.update_layout(xaxis=dict(tickmode='linear', tick0=data_maison['annee'].min(), dtick=1),
